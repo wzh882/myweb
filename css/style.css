@@ -42,12 +42,12 @@
 	/* 微调图标位置 */
 	.box1_left {
 	    position: relative;
-	    bottom: 2rem; /* 略向下移动 */
+	    bottom: 2.5rem; /* 略向下移动 */
 	}
 	
 	.box1_right {
 	    position: relative;
-	    bottom: 2rem; /* 略向上移动 */
+	    bottom: 2.5rem; /* 略向上移动 */
 	}
 	
 	.box1 img {
