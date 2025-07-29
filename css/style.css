@@ -27,22 +27,32 @@
 	  background-color: #000;
 	 }
 	.box1 {
-	  display: flex;
-	  align-items: center;
-	  justify-content: space-between;
-	  padding-top: 2rem;
+	    display: flex;
+	    align-items: center; /* 保持默认居中 */
+	    justify-content: space-between;
+	    padding-top: 2rem;
 	}
-
-
-
+	
+	.box1_left, .box1_right {
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+	
+	/* 微调图标位置 */
 	.box1_left {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	  
+	    position: relative;
+	    bottom: 2rem; /* 略向下移动 */
 	}
+	
+	.box1_right {
+	    position: relative;
+	    bottom: 2rem; /* 略向上移动 */
+	}
+	
 	.box1 img {
-		width: 48px;
+	    width: 43px;
+	    transition: all 0.3s ease; /* 添加平滑过渡效果 */
 	}
 	.box2 {
 	  display: flex;
