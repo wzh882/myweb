@@ -1,0 +1,420 @@
+	* {
+	  padding: 0;
+	  margin: 0;
+	  box-sizing: border-box;
+	}
+
+	img {
+	  display: block;
+	}
+
+	ul, li, ol {
+	  list-style: none;
+	}
+	@font-face {
+		font-family:'苹方';
+		src: url('fonts/pingfang_sc.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+
+	}
+
+	body {
+	  
+	  min-height: 100vh;
+	  padding: 1rem;
+	  font-family: "苹方";
+	  background-color: #000;
+	 }
+	.box1 {
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+	  padding-top: 2rem;
+	}
+
+
+
+	.box1_left {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	  
+	}
+	.box1 img {
+		width: 48px;
+	}
+	.box2 {
+	  display: flex;
+	  align-items: center;
+	  padding-top: 2rem;
+	  padding-left: 0rem;
+	  padding-bottom: 0.875rem;
+	  position: relative;
+	  justify-content: center;
+	  flex-direction: column;
+	}
+
+	.box2 .avatar {
+	  width: 5rem;
+	  height: 5rem;
+	  border-radius: 50%;
+	  margin-right: 1rem;
+	  border: 0.18rem solid #fff;
+	}
+	.box3 {
+		display: flex;
+		justify-content: center;
+		gap: 1.8px;
+	}
+
+	.box3 .name {
+	  color: #fff;
+	  font-weight: 500;
+	  font-size: 1rem
+	}
+	.box3 .responsive-gif{
+		max-width: 100%;
+		height: 21px;
+	}
+	.user-stats {
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+		color: white;
+		font-size: 0.8rem;
+		padding: 10px 0;
+		margin: 15px 0;
+	}
+
+	.user-stats .stat-item {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+
+	.user-stats .count {
+		color: #ffffff;
+		font-weight: 500;
+	}
+
+	.user-stats .label {
+		color: #999;
+	}
+
+	.user-stats .level {
+		color: #fff; 
+	}
+
+	   .box4 {
+		   display: flex;
+		   flex: none;
+		   justify-content: space-between;
+		   align-items: center;
+		   gap: 0.625rem;
+		   padding: 1rem;
+		   
+	   }
+	   .box4-item{
+		   display: flex;
+		   flex-direction: row;
+		   align-items: center;
+		   min-width: 80px;
+		   background:#333333 ;
+		   border-radius: 6px;
+		   padding: 0.4rem;
+		   min-width: 5px;
+		   
+		}
+		.box4-item img {
+			width: 20px;
+			height: 20px;
+			object-fit: contain;
+			margin-right: 0.5rem;
+		}
+		.box4-item span {
+			white-space: nowrap;
+			font-size: 0.625rem;
+			color: #F2F2F2;
+			
+		}
+		/* 修改最后一个按钮的特殊样式 */
+		.box4-item:last-child {
+		  padding: 0.25rem; /* 减小内边距 */
+		  min-width: auto;   /* 移除最小宽度限制 */
+		  width: 40px;      /* 固定宽度，可调整 */
+		  height: 35px;     /* 固定高度，可调整 */
+		  display: flex;
+		  justify-content: center; /* 图标居中 */
+		  align-items: center;     /* 图标居中 */
+		}
+		
+		/* 保持图标大小不变 */
+		.box4-item-iop img {
+		  width: 40px;
+		  height: 40px;
+		  margin: 0; /* 去掉原有外边距 */
+		}
+	   
+	   .box5 {
+		   display: flex;
+		   justify-content: space-between;
+			padding: 14px 70px;
+			margin-bottom: 4px;
+			background-color: #121212;
+			border-radius: 6px 6px 0 0;
+	   }
+	   .box5 .item {
+		   display: flex;
+		   flex-direction: column;
+		   align-items: center;
+		   gap: 10px;
+		   color: #fff;
+		   font-size: 0.925rem;
+	   }
+	   .box6 {
+		   background-color: #121212;
+	   }
+	   .box6-top {
+		   display: flex;
+		   justify-content: space-between;
+		   padding: 8px 15px;
+		   color: #ccc;
+		   font-size: 0.75rem;
+	   }
+	   .box6-profile{
+		   display: flex;
+		   padding: 15px;
+		   align-items: flex-start;
+	   }
+	   .box6-userinfo{
+		   margin-left: 10px;
+		   display: flex;
+		   flex-direction: column;
+	   }
+	   .user-details {
+		  display: flex;
+		  flex-direction: column;
+		  gap: 4px;
+		   
+	   }
+	   .box6-name {
+		   color: #fff;
+		   font-size: 0.9rem;
+		   font-weight: normal;
+		   line-height: 1.2;
+		   text-align: left;
+	   }
+	   
+	   .box6-img {
+		   width: 40px;
+		   height: 40px;
+		   border-radius: 50%;
+		   object-fit: cover;
+		   transition: all 0.3s ease;
+	   }
+	   .box6-content{
+		   font-size: 2.5rem;
+		   color: #fff;
+		   margin-top: 10px;
+		   font-weight: bold;
+	   }
+	   .box6-actions {
+		   display: flex;
+		   justify-content: flex-start;
+		   margin-top: 20px;
+		   padding: 0 0 0  60px;
+		   gap: 40px;
+	   }
+	   .box6-action {
+		   display: flex;
+		   flex-direction: row;
+		   align-items: center;
+		   font-size: 1rem;
+		   color: #aaa;
+		   gap: 8px;
+	   }
+	  
+	   #box6-bottom {
+		   text-align: center;
+		   color: #666;
+		   font-size: 0.8rem;
+		   padding: 30px 0;
+		   margin-top: 30px;
+			  }
+			  .float-action-btn{
+				  position: fixed;
+				  bottom: 100px;
+				  right:40px;
+				  z-index: 100;
+				  background: transparent;
+				  border: none;
+				  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+				  border-radius: 50%;
+			  }
+			  #box6-username{
+				  color: #fff;
+			  }
+		   
+	  
+	   .box6-img {
+		   width:40px;
+		   height: 40px;
+		   border-radius: 50%;
+		   object-fit: cover;
+		   transition: all 0.3s ease;
+			}
+	   .box6-time {
+		   display: block;
+		   font-size: 0.7rem;
+		   color: #999;
+		   margin-top: 5px;
+		   padding-left: 0;
+		   font-weight: normal;
+		   }
+		   
+	   #box6-custom{
+		   display: block;
+		   font-size: 0.8rem;
+		   color: #fff;
+		   margin-top: 5px;
+		   padding-left: 0;
+		   font-weight: normal;
+	   }
+	  
+	   .box7 .d1 {
+		   width: 50px;
+		   height: 50px;
+		   background-color: #181818;
+		   border: #fff;
+		   border-radius: 10%;
+	   }  
+		  
+		  .box7 img {
+		   max-width: 100%;
+		   height: auto;
+		   
+		  }
+	   
+	   
+	   
+	   .modal {
+		   display: none;
+		   position: fixed;
+		   z-index: 1000;
+		   left: 0;
+		   top: 0;
+		   width: 100%;
+		   height: 100%;
+		   overflow: auto;
+		   background-color:  rgba(0,0,0,0.5);
+		   backdrop-filter: blur(5px);
+	   }
+	   .modal-content{
+		   background-color: #fff;
+		   margin: 15% auto;
+		   padding: 20px;
+		   border-radius: 8px;
+		   width: 80%;
+		   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		   animation-name: animatetop;
+		   animation-duration: 0.4s;
+	   }
+	   @keyframes animatetop{
+		from{ top: -300px; opacity: 0;}
+		to{top: 0; opacity: 1;} 
+	   }
+	   .close {
+		   color: #aaa;
+		   float: right;
+		   font-size: 28px;
+		   font-weight: bold;
+		   transition: color 0.3s;
+	   }
+	   .close:hover, .close:focus {
+		 color: #000;
+		 text-decoration: none;
+		 cursor: pointer;
+	   }
+	   /* 表单样式 */
+	   #editForm label {
+		 display: block;
+		 margin-bottom: 5px;
+		 font-weight: bold;
+	   }
+	   
+	   #editForm input[type="text"],
+	   #editForm input[type="file"] {
+		 width: 100%;
+		 padding: 10px;
+		 margin-bottom: 15px;
+		 border: 1px solid #ccc;
+		 border-radius: 4px;
+		 box-sizing: border-box;
+	   }
+	   
+	   #editForm input[type="submit"] {
+		 background-color: #007BFF;
+		 color: white;
+		 padding: 10px 20px;
+		 border: none;
+		 border-radius: 4px;
+		 cursor: pointer;
+		 transition: background-color 0.3s;
+	   }
+	   
+	   #editForm input[type="submit"]:hover {
+		 background-color: #0056b3;
+	   }
+	   .vip-icons {
+		   display: flex;
+		   gap: 15px;
+		   margin-top: 10px;
+		   justify-content: center;
+	   }
+	   .vip-icon {
+		   cursor: pointer;
+		   border: 2px solid transparent;
+		   border-radius: 5px;
+		   padding: 5px;
+		   transition: all 0.3s;
+	   }
+	   .vip-icon img {
+		   width: 70px;
+		   object-fit: contain;
+	   }
+	   .vip-icon input[type="radio"]:checked+img {
+		   border: 2px solid #ffb940;
+		   border-radius: 5px;
+		   box-shadow: 0 0 10px rgba(255,185,64,0.5);
+	   }
+	.tabbar {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: #121212;
+		display: flex;
+		justify-content: space-around;
+		padding: 12px 0;
+	}
+	.tab-item {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		height: 100%;
+	}
+	.tab-item img {
+		width: 24px;
+		height: 24px;
+		object-fit: contain;
+	}
+	.tab-item span {
+		font-size: 15px;
+		color: #ffffff;
+		font-weight: 500;
+		letter-spacing: 0.2px;
+	}
